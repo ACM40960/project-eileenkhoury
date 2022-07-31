@@ -13,7 +13,7 @@
 - [**Included Code**](https://github.com/ACM40960/project-eileenkhoury#included-code)
   - [Models](https://github.com/ACM40960/project-eileenkhoury#models)
   - [Evaluation and Accuracy](https://github.com/ACM40960/project-eileenkhoury#evaluation-and-accuracy)
-- [**Miscellaneous**](https://github.com/ACM40960/project-eileenkhoury#included-code) 
+- [**Miscellaneous**](https://github.com/ACM40960/project-eileenkhoury/blob/main/README.md#miscellaneous) 
 
 ## Introduction
  This project aims to empircally model the odds a team winning in a specific team match up in the NBA using R and R studio. The model is then extended to predict which team will win the proposed match up. This model is in the spirit of academic curiousity rather than a direct monetary application. 
