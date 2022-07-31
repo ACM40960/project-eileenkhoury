@@ -11,7 +11,8 @@
   - [Software Installation](https://github.com/ACM40960/project-eileenkhouryt#software-installation)
   - [Data Collection](https://github.com/ACM40960/project-eileenkhouryt#data-collection)
 - [**Included Code**](https://github.com/ACM40960/project-eileenkhouryt#included-code)
-  - [R/R Studio](https://github.com/ACM40960/project-eileenkhouryt#r/r-studio)
+  - [Models](https://github.com/ACM40960/project-eileenkhouryt#r/r-studio)
+  - [Evaluation and Accuracy]()
 
 ## Introduction
  This project aims to empircally model the odds a team winning in a specific team match up in the NBA using R and R studio. The model is then extended to predict which team will win the proposed match up. This model is in the spirit of academic curiousity rather than a direct monetary application. 
@@ -61,7 +62,7 @@ This data set was tediously created by repeated copy and pasting the boxscores o
 
 
  ## Included Code
-There are several **.Rmd** files included in the 'Code' folder. The first folder, 'Models', includes the models and a data exploration, while 'Accuracy Evalaution' includes the files that test and evaluate said models. 
+There are several **.Rmd** files included in the 'Code' folder. The first folder, 'Models', includes the models and a data exploration, while 'Accuracy Evaluation' includes the files that test and evaluate said models. 
  ### Models
  
  - **EDA.csv**
