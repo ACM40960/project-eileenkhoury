@@ -17,7 +17,9 @@
  This project aims to empircally model the odds a team winning in a specific team match up in the NBA using R and R studio. The model is then extended to predict which team will win the proposed match up. This model is in the spirit of academic curiousity rather than a direct monetary application. 
 <br />
 <br />
-The four models included use team and players statistics to propose a mehtodology of simualting NBA mactchup results. The first model, considered the 'simple model', looks only at a team's scored points distribution in a particualre season to replicate game results. The second model utlizes the 'Four Factors' technique, initally proposed by Dean Oliver, aggregated by team to simualte mactchup results. The third model builds on the second, but allows the user to pick 8 players from each team to pick the matchup to build the simualtion off of, and for this reason the statistics feeding the four factors are on a player aggregated level. The final fourth model automates the third model by selecting the top 8 players, by average minutes played in each game during the 2019, 2020 and 2021 seasos, for each team. 
+The four main models included use team and players statistics to propose a mehtodology of simualting NBA mactchup results. The first model, considered the 'simple model', looks only at a team's scored points distribution in a particualre season to replicate game results. The second model utlizes the 'Four Factors' technique, initally proposed by Dean Oliver, aggregated by team to simualte mactchup results. The third model builds on the second, but allows the user to pick 8 players from each team to pick the matchup to build the simualtion off of, and for this reason the statistics feeding the four factors are on a player aggregated level. The final fourth model automates the third model by selecting the top 8 players, by average minutes played in each game during the 2019, 2020 and 2021 seasos, for each team. 
+<br />
+The last three models have a variable 'Home Advantage' factor, in which different values for modeling this advantage are plugged in. The accuracy of these home advantge values are assesed in model validation files. The first model is built on scoring distributions based on the home team's scoring distribution when home and away, as well as for the away team; essentailly this imbeds the home advantge in the model considering the differnt point distributions for each team in the matchup. 
 <br />
 <br />
 This README file will guide interested parties in reproducing the results of the paper included in the repositry, from collecting the data set to running the included R scripts. 
@@ -54,10 +56,22 @@ This data set was taken from a [kaggle data repository](https://www.kaggle.com/d
 <br />
 - 2021_2022 Team Box Scores.csv
 
-This data set was tediously created by repeated copy and pasting the boxscores of every game from the [NBA Stats boxscore listings](https://www.nba.com/stats/teams/boxscores/?sort=gdate&dir=1&Season=2021-22&SeasonType=Regular%20Season). The offial NBA stats site suspended  dowloading  official box score files some time after the regular 2021/2022 season wrapped, and after  ma ny failed attempts at webscraping the data I resorted to old and faithful. I performed many validation checks in Excel so ensure no errors were made when copy adn pasting. 
+This data set was tediously created by repeated copy and pasting the boxscores of every game from the [NBA Stats boxscore listings](https://www.nba.com/stats/teams/boxscores/?sort=gdate&dir=1&Season=2021-22&SeasonType=Regular%20Season) for the 2021/2022 season. The offial NBA stats site suspended  dowloading  official box score files some time after the regular 2021/2022 season wrapped, and after  ma ny failed attempts at webscraping the data I resorted to old and faithful. I performed many validation checks in Excel so ensure no errors were made when copy adn pasting. 
 ![boxscore_resize](https://user-images.githubusercontent.com/110261952/182038020-95646365-a2f0-45a2-a56b-f6f6259f2d59.png)
 
 
  ## Included Code
+ There are several **.Rmd** files included in the Code folder:
+ - **EDA.csv**
+
+This file performs an intial data exploration as it pertains to points scored by team, players and positions. Statistical factors and point distributions of 'home teams'  opposed to 'away teams' are compared to determine validity of the home team advantage. Season over season scoring trends are also included. 
+<br />
+<br />
+ - Simple Model.csv
  
+ This file has the code for the most basic MC simulation- looking at just points scored distributions of the two teams matched up. There is also an exploration and justification of a tie breaker included.
+<br />
+<br />
+ - Team Factor Model 
+ - Player Factor Model 
  
