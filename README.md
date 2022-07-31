@@ -36,24 +36,28 @@ Your computer complier (UNIX, Windows, MacOS, etc) dictates which version of **R
 You can download [R](https://www.r-project.org/) here and [RStudio](https://www.rstudio.com/products/rstudio/download/). 
 
  ### Data Collection
- This project utilizes four data sets, sourced  from [kaggle](https://www.kaggle.com/) [Basketball Reference](https://www.basketball-reference.com/), and 
+ This project utilizes four data sets, sourced  from [kaggle](https://www.kaggle.com/), [Basketball Reference](https://www.basketball-reference.com/), and 
  [NBA.com](https://www.basketball-reference.com/). They are listed data sets are located in the "Data" folder:
  - games_details.csv 
  - games.csv 
+ 
 These two data sets were taken from a [kaggle data repository](https://www.kaggle.com/datasets/nathanlauga/nba-games), in which Nathan uses a python web scraper on the [NBA Stats](https://www.nba.com/stats/) website to collect player level and team level statistics for each NBA game from the 2004 season to the 2021 season. Nathan includes several datasets but we are only interested in downloading 'games.csv' and 'games_details.csv'. You can select the data files of interest by left clicking on the file of interest (shown in the Green and Red boxes below), and then right clicking the download button circled in blue. 
 ![kaggle instructions_resize](https://user-images.githubusercontent.com/110261952/182036976-53aa30a7-e147-45db-a3be-665dd62eecd4.png)
-
 <br />
 <br />
 - Team Totals.csv
+
 This data set was taken from a [kaggle data repository](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats?select=Team+Totals.csv), in which Sumitro used the IMPORTHTML function from Google Sheets repeatedly on [Basketball Reference](https://www.basketball-reference.com/). Nathan includes several datasets but we are only interested in downloading 'Total_Teams.csv'. You can select the data files of interest by left clicking on the file of interest (shown in the Green and Red boxes below), and then right clicking the download button circled in blue. 
+
 ![kaggle_2_resize](https://user-images.githubusercontent.com/110261952/182037287-0e7c9e16-d12b-44c5-b296-ed6884847766.png)
 <br />
 <br />
- - 2021_2022 Team Box Scores.csv
-This data set was taken from a [kaggle data repository](https://www.kaggle.com/datasets/sumitrodatta/nba-aba-baa-stats?select=Team+Totals.csv), in which Sumitro used the IMPORTHTML function from Google Sheets repeatedly on [Basketball Reference](https://www.basketball-reference.com/). Nathan includes several datasets but we are only interested in downloading 'Total_Teams.csv'. You can select the data files of interest by left clicking on the file of interest (shown in the Green and Red boxes below), and then right clicking the download button circled in blue. 
+- 2021_2022 Team Box Scores.csv
 
- 
+This data set was tediously created by repeated copy and pasting the boxscores of every game from the [NBA Stats boxscore listings](https://www.nba.com/stats/teams/boxscores/?sort=gdate&dir=1&Season=2021-22&SeasonType=Regular%20Season). The offial NBA stats site suspended  dowloading  official box score files some time after the regular 2021/2022 season wrapped, and after  ma ny failed attempts at webscraping the data I resorted to old and faithful. I performed many validation checks in Excel so ensure no errors were made when copy adn pasting. 
+![boxscore_resize](https://user-images.githubusercontent.com/110261952/182038020-95646365-a2f0-45a2-a56b-f6f6259f2d59.png)
+
+
  ## Included Code
  
  
