@@ -12,7 +12,8 @@
   - [Data Collection](https://github.com/ACM40960/project-eileenkhoury#data-collection)
 - [**Included Code**](https://github.com/ACM40960/project-eileenkhoury#included-code)
   - [Models](https://github.com/ACM40960/project-eileenkhoury#models)
-  - [Evaluation and Accuracy](https://github.com/ACM40960/project-eileenkhoury#evaluation)
+  - [Evaluation and Accuracy](https://github.com/ACM40960/project-eileenkhoury#evaluation-and-accuracy)
+- [**Miscellaneous**](https://github.com/ACM40960/project-eileenkhoury#included-code) 
 
 ## Introduction
  This project aims to empircally model the odds a team winning in a specific team match up in the NBA using R and R studio. The model is then extended to predict which team will win the proposed match up. This model is in the spirit of academic curiousity rather than a direct monetary application. 
@@ -65,23 +66,43 @@ This data set was tediously created by repeated copy and pasting the boxscores o
 There are several **.Rmd** files included in the 'Code' folder. The first folder, 'Models', includes the models and a data exploration, while 'Accuracy Evaluation' includes the files that test and evaluate said models. 
  ### Models
  
- - **EDA.csv**
+ - **EDA.Rmd**
 
 This file performs an intial data exploration as it pertains to points scored by team, players and positions. Statistical factors and point distributions of 'home teams'  opposed to 'away teams' are compared to determine validity of the home team advantage. Season over season scoring trends are also included. 
 <br />
 <br />
- - **Simple Model.csv**
+ - **Simple Model.Rmd**
  
 This file has the code for the most basic MC simulation- looking at just points scored distributions of the two teams matched up. There is also an exploration and justification of a tie breaker included.
 <br />
 <br />
- - **Team Factor Model.csv**
+ - **Team Factor Model.Rmd**
 
 This file has the code for a team level MC simulation using [Dean Oliver's Four Factor's](http://www.basketballonpaper.com/index.html) approach. There is an exploration and justification of a tie breaker, as well as home court advantage. The wieght of the factors are evaluated to create similliar model with different justified weights for each factor. 
 <br />
 <br />
- - **Player Factor Model.csv**
+ - **Player Factor Model.Rmd**
  
  This file has the code for a player level MC simulation using [Dean Oliver's Four Factor's](http://www.basketballonpaper.com/index.html) approach. There is an exploration and justification of a tie breaker, as well as home court advantage. The wieght of the factors are evaluated to create similliar model with different justified weights for each factor. There are two approaches in this model- one in which the user can enter manually 8 players on the home and away team, and the other which automatically chooses the players for each team according to those with the highest average game play, in minutes, across the 2019, 2020 and 2021 season. 
  
  ### Evaluation and Accuracy
+ The .Rmd files in this subfolder evaluate the accuracy of the proposed models above using training and testing data. 
+ - **Simple_Model_Accuracy.Rmd**
+ 
+ This file performs an accuracy test with training data and testing data to get an overall accuracy rate of the  model included in the **Simple Model.Rmd** file. We perform two types of testing, one randomly selcting the matchups for training and testing, and the other using the first 80% of matches to train, while testing on the last 20%. 
+ <br />
+<br />
+- **Team_Factor_Accuracy.Rmd**
+ 
+This file performs an accuracy test with training data and testing data to get an overall accuracy rate of the  model included in the **Team Factor Model.Rmd** file. We perform two types of testing, one randomly selcting the matchups for training and testing, and the other using the first 80% of matches to train, while testing on the last 20% . Within those two types of testing there is also variation among the factor wieghts and home court advatage values. Morover, we pass the model through a sequence of home advantage factors to see which value is optimal and again test the accuracy again using the standard and adjusted weights. There are many accuracy while() loops in the files, so it takes quite a bit of time to run. 
+ <br />
+<br />
+- **Player_Factor_Accuracy.Rmd**
+ 
+This file performs an accuracy test with training data and testing data to get an overall accuracy rate of the  model included in the **Player Factor Model.Rmd** file. We perform two types of testing, one randomly selcting the matchups for training and testing, and the other using the first 80% of matches to train, while testing on the last 20% . Within those two types of testing there is also variation among the factor wieghts and home court advatage values. Morover, we pass the model through a sequence of home advantage factors to see which value is optimal and again test the accuracy again using the standard and adjusted weights. There are many accuracy while() loops in the files, so it takes quite a bit of time to run. 
+ <br />
+<br />
+
+## Miscellaneous
+
+Included in this projecct's repository is a a pdf of my final paper and a 'Graphics' folder, which includes all graphics, mostly generated from the .Rmd files, used in the paper. 
