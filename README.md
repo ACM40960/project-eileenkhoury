@@ -61,17 +61,25 @@ This data set was tediously created by repeated copy and pasting the boxscores o
 
 
  ## Included Code
- There are several **.Rmd** files included in the Code folder:
+There are several **.Rmd** files included in the 'Code' folder. The first folder, 'Models', includes the models and a data exploration, while 'Accuracy Evalaution' includes the files that test and evaluate said models. 
+ ### Models
+ 
  - **EDA.csv**
 
 This file performs an intial data exploration as it pertains to points scored by team, players and positions. Statistical factors and point distributions of 'home teams'  opposed to 'away teams' are compared to determine validity of the home team advantage. Season over season scoring trends are also included. 
 <br />
 <br />
- - Simple Model.csv
+ - **Simple Model.csv**
  
- This file has the code for the most basic MC simulation- looking at just points scored distributions of the two teams matched up. There is also an exploration and justification of a tie breaker included.
+This file has the code for the most basic MC simulation- looking at just points scored distributions of the two teams matched up. There is also an exploration and justification of a tie breaker included.
 <br />
 <br />
- - Team Factor Model 
- - Player Factor Model 
+ - **Team Factor Model.csv**
+
+This file has the code for a team level MC simulation using [Dean Oliver's Four Factor's](http://www.basketballonpaper.com/index.html) approach. There is an exploration and justification of a tie breaker, as well as home court advantage. The wieght of the factors are evaluated to create similliar model with different justified weights for each factor. 
+<br />
+<br />
+ - **Player Factor Model.csv**
+ 
+ This file has the code for a player level MC simulation using [Dean Oliver's Four Factor's](http://www.basketballonpaper.com/index.html) approach. There is an exploration and justification of a tie breaker, as well as home court advantage. The wieght of the factors are evaluated to create similliar model with different justified weights for each factor. There are two approaches in this model- one in which the user can enter manually 8 players on the home and away team, and the other which automatically chooses the players for each team according to those with the highest average game play, in minutes, across the 2019, 2020 and 2021 season. 
  
