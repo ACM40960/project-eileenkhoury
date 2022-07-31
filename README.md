@@ -27,7 +27,7 @@ This README file will guide interested parties in reproducing the results of the
  
  ## Getting Started
  
- ### R/R Studio
+ ### Software Installation
 R                          |  RStudio
 :-------------------------:|:-------------------------:
 ![R_resize](https://user-images.githubusercontent.com/110261952/182035430-c2ca75d5-0553-41cc-812b-ff2ee51146c3.png) |![RStudio_resize](https://user-images.githubusercontent.com/110261952/182035438-912e4851-2e4e-43f6-b574-170cb6d49328.png)
@@ -84,3 +84,4 @@ This file has the code for a team level MC simulation using [Dean Oliver's Four 
  
  This file has the code for a player level MC simulation using [Dean Oliver's Four Factor's](http://www.basketballonpaper.com/index.html) approach. There is an exploration and justification of a tie breaker, as well as home court advantage. The wieght of the factors are evaluated to create similliar model with different justified weights for each factor. There are two approaches in this model- one in which the user can enter manually 8 players on the home and away team, and the other which automatically chooses the players for each team according to those with the highest average game play, in minutes, across the 2019, 2020 and 2021 season. 
  
+ ### Evaluation and Accuracy
