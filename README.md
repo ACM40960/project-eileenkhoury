@@ -60,7 +60,8 @@ Visually it will look like this:
 ______________________________________________________________________________________________________________________________________________________________
  ### Data Collection
  This project utilizes four data sets, sourced  from [kaggle](https://www.kaggle.com/), [Basketball Reference](https://www.basketball-reference.com/), and 
- [NBA.com](https://www.basketball-reference.com/). They are listed data sets are located in the "Data" folder:
+ [NBA.com](https://www.basketball-reference.com/). They are listed data sets are located in the "Data.zip" file. To unzip said file right click and you will be prompted. 
+ 
  - games_details.csv 
  - games.csv 
  
