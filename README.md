@@ -39,6 +39,23 @@ Your computer complier (UNIX, Windows, MacOS, etc) dictates which version of **R
 
 You can download [R](https://www.r-project.org/) here and [RStudio](https://www.rstudio.com/products/rstudio/download/). 
 
+Once RStudio is downloaded and you will need to import several libraries in order to run the included code. To do so please copy this code into the 'console' of RStudio: 
+
+______________________________________________________________________________________________________________________________________________________________
+load.lib<-c("magrittr", "ggplot2", "RColorBrewer","tidyverse","readr","ggcorrplot",
+"knitr","broom","gridExtra","tibble","dplyr","plyr","tidyverse","reshape",
+"RColorBrewer","dygraphs","xts","rlang","lubridate","broom","effects",
+"lmtest","sjPlot","emmeans","lmtest","ggpubr","plyr")
+
+install.lib <- load.lib[!load.lib %in% installed.packages()
+
+for(lib in install.lib) install.packages(lib,dependencies=TRUE)
+
+sapply(load.lib,require,character=TRUE)
+______________________________________________________________________________________________________________________________________________________________
+
+Visually it will look like this: 
+
  ### Data Collection
  This project utilizes four data sets, sourced  from [kaggle](https://www.kaggle.com/), [Basketball Reference](https://www.basketball-reference.com/), and 
  [NBA.com](https://www.basketball-reference.com/). They are listed data sets are located in the "Data" folder:
