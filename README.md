@@ -65,6 +65,7 @@ ________________________________________________________________________________
  - games.csv 
  
 These two data sets were taken from a [kaggle data repository](https://www.kaggle.com/datasets/nathanlauga/nba-games), in which Nathan uses a python web scraper on the [NBA Stats](https://www.nba.com/stats/) website to collect player level and team level statistics for each NBA game from the 2004 season to the 2021 season. Nathan includes several datasets but we are only interested in downloading 'games.csv' and 'games_details.csv'. You can select the data files of interest by left clicking on the file of interest (shown in the Green and Red boxes below), and then right clicking the download button circled in blue. 
+
 ![kaggle instructions_resize](https://user-images.githubusercontent.com/110261952/182036976-53aa30a7-e147-45db-a3be-665dd62eecd4.png)
 <br />
 <br />
@@ -78,8 +79,8 @@ This data set was taken from a [kaggle data repository](https://www.kaggle.com/d
 - 2021_2022 Team Box Scores.csv
 
 This data set was tediously created by repeated copy and pasting the boxscores of every game from the [NBA Stats boxscore listings](https://www.nba.com/stats/teams/boxscores/?sort=gdate&dir=1&Season=2021-22&SeasonType=Regular%20Season) for the 2021/2022 season. The offial NBA stats site suspended  dowloading  official box score files some time after the regular 2021/2022 season wrapped, and after  ma ny failed attempts at webscraping the data I resorted to old and faithful. I performed many validation checks in Excel so ensure no errors were made when copy adn pasting. 
-![boxscore_resize](https://user-images.githubusercontent.com/110261952/182038020-95646365-a2f0-45a2-a56b-f6f6259f2d59.png)
 
+![boxscore_resize](https://user-images.githubusercontent.com/110261952/182038020-95646365-a2f0-45a2-a56b-f6f6259f2d59.png)
 
  ## Included Code
 There are several **.Rmd** files included in the 'Code' folder. The first folder, 'Models', includes the models and a data exploration, while 'Accuracy Evaluation' includes the files that test and evaluate said models. 
