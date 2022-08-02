@@ -45,7 +45,7 @@ ________________________________________________________________________________
 load.lib<-c("magrittr", "ggplot2", "RColorBrewer","tidyverse","readr","ggcorrplot",
 "knitr","broom","gridExtra","tibble","dplyr","plyr","tidyverse","reshape",
 "RColorBrewer","dygraphs","xts","rlang","lubridate","broom","effects",
-"lmtest","sjPlot","emmeans","lmtest","ggpubr","plyr")
+"lmtest","sjPlot","emmeans","lmtest","ggpubr","plyr", "rstatix")
 
 install.lib <- load.lib[!load.lib %in% installed.packages()
 
