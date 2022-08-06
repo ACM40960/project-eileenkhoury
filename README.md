@@ -4,6 +4,7 @@
 </p>
   <br />
  Simulating NBA matchups with Monte Carlo to predict odds and predicted winning team. 
+ - IMPORTANT UPDATE: As this repository's storage  capacity has reahed its limit, you can access all data, code and graphica [here](https://drive.google.com/drive/folders/1k3gUW6z90m3e0ysV76hl1gCNWlogDIlT?usp=sharing). 
 
 ## Table of Contents
 - [**Introduction**](https://github.com/ACM40960/project-eileenkhoury#introduction)
@@ -18,7 +19,6 @@
 ## Introduction
  This project aims to empircally model the odds a team winning in a specific team match up in the NBA using R and R studio. The model is then extended to predict which team will win the proposed match up. This model is in the spirit of academic curiousity rather than a direct monetary application. 
  
- -UPDATE: As this repository's storage  capacity has reahed its limit, you can access all data, code and graphica [here](https://drive.google.com/drive/folders/1k3gUW6z90m3e0ysV76hl1gCNWlogDIlT?usp=sharing). 
 <br />
 <br />
 The four main models included use team and players statistics to propose a mehtodology of simualting NBA mactchup results. The first model, considered the 'simple model', looks only at a team's scored points distribution in a particualre season to replicate game results. The second model utlizes the 'Four Factors' technique, initally proposed by Dean Oliver, aggregated by team to simualte mactchup results. The third model builds on the second, but allows the user to pick 8 players from each team to pick the matchup to build the simualtion off of, and for this reason the statistics feeding the four factors are on a player aggregated level. The final fourth model automates the third model by selecting the top 8 players, by average minutes played in each game during the 2019, 2020 and 2021 seasos, for each team. 
