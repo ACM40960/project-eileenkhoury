@@ -5,7 +5,7 @@
   <br />
  Simulating NBA matchups with Monte Carlo to predict odds and predicted winning team. 
  <br />
- - IMPORTANT UPDATE: As this repository's storage  capacity has reahed its limit, you can access all data, code and graphics can be found [here](https://drive.google.com/drive/folders/1k3gUW6z90m3e0ysV76hl1gCNWlogDIlT?usp=sharing).
+ - IMPORTANT UPDATE: As this repository's storage  capacity has reahed its limit, you can access all data, code and graphics can be found: (https://drive.google.com/drive/folders/1k3gUW6z90m3e0ysV76hl1gCNWlogDIlT?usp=sharing).
 
 ## Table of Contents
 - [**Introduction**](https://github.com/ACM40960/project-eileenkhoury#introduction)
